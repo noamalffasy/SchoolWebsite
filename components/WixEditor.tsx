@@ -12,7 +12,7 @@ class WixEditor extends Component {
         target="_blank"
         rel="nofollow"
         style={{
-          height: "50vh",
+          height: "100vh",
           display: "flex",
           boxSizing: "border-box",
           background: "#eff1f2",
@@ -43,9 +43,9 @@ class WixEditor extends Component {
             style={{
               fontFamily:
                 "wixFreemiumFontW01-65Medi, wixFreemiumFontW02-65Medi, wixFreemiumFontW10-65Medi, Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif",
-              fontSize: "4rem",
+              fontSize: "8rem",
               color: "#20303C",
-              lineHeight: "43px",
+              lineHeight: "5rem",
               flexShrink: 0,
               wordWrap: "break-word"
             }}

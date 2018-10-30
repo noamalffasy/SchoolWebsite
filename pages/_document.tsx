@@ -14,12 +14,18 @@ class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no"
           />
 
           {/* CSS */}
           <link rel="stylesheet" href="/static/css/bootstrap-grid.min.css" />
           <link rel="stylesheet" href="/static/css/bootstrap-reboot.min.css" />
+
+          {/* Fonts */}
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Arimo"
+          />
 
           {/* Favicons */}
           <link
@@ -105,6 +111,13 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <style jsx global>{`
+            body {
+              font-family: "Arimo", -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+                "Noto Color Emoji"!important;
+            }
+
             a {
               color: #3e618f;
               opacity: 0.65;

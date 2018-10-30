@@ -1,18 +1,12 @@
 import * as React from "react";
 import { Component } from "react";
 
-interface Props {
-  SVG: Element;
-  title: string;
-}
-
-class Card extends Component<Props> {
+class Card extends Component {
   render() {
-    const { SVG, title, children } = this.props;
+    const { children } = this.props;
+
     return (
       <div className="card">
-        {SVG}
-        <h2>{title}</h2>
         {children}
         <style jsx>{`
           .card {
@@ -22,10 +16,6 @@ class Card extends Component<Props> {
             padding: 1.5rem 0.5rem;
           }
 
-          .card h2 {
-            font-size: 3rem;
-          }
-
           @media (min-width: 768px) {
             .card {
               width: calc((100% * 1 / 2) - (1rem * 2));
@@ -33,9 +23,13 @@ class Card extends Component<Props> {
           }
         `}</style>
         <style jsx global>{`
+          .card h2 {
+            font-size: 3rem;
+          }
+
           .card svg {
-            width: 4rem;
-            fill: #000;
+            height: 5rem;
+            width: 6rem;
           }
 
           .card p,
@@ -43,16 +37,55 @@ class Card extends Component<Props> {
             font-weight: 300;
           }
 
-          .card p {
+          .card > p {
             font-size: 1.5rem;
           }
 
-          .card a {
+          .card > a {
             font-size: 1.15rem;
           }
 
           .card a::before {
             content: "< ";
+          }
+
+          .card .sub-category {
+            margin: 0 0 0.5rem;
+          }
+
+          .card .sub-category p {
+            margin: 0 0 0.2rem;
+          }
+        `}</style>
+      </div>
+    );
+  }
+}
+
+interface CardImageProps {
+  background: string;
+  svg?: boolean;
+}
+export class CardImage extends Component<CardImageProps> {
+  render() {
+    const { children, background, svg } = this.props;
+    return (
+      <div className="image">
+        {children}
+        <style jsx>{`
+          .image {
+            display: flex;
+            max-width: 70%;
+            height: ${svg ? "12rem" : "0"};
+            margin: 0 auto 1rem;
+            padding: 2.5rem 1rem ${svg ? "2.5rem" : "70%"};
+            border-radius: 0.3rem;
+            background: ${background};
+            background-size: cover;
+            background-position: center center;
+            box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+            align-items: center;
+            justify-content: center;
           }
         `}</style>
       </div>
