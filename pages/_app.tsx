@@ -27,7 +27,7 @@ class MyApp extends App<Props> {
     return (
       <Container>
         <WixEditor />
-        <div className="main">
+        <div id="main">
           {router.pathname === "/" ? (
             <>
               <div className="hero">
@@ -53,6 +53,9 @@ class MyApp extends App<Props> {
               <Component {...pageProps} />
             </>
           )}
+          <a href="#main" className="goToTop">
+            <span className="arrow" />
+          </a>
           <style jsx>{`
             .hero {
               position: relative;
@@ -63,7 +66,7 @@ class MyApp extends App<Props> {
 
             .hero .background {
               position: absolute;
-              background-color: rgba(255,255,255,1);
+              background-color: rgba(255, 255, 255, 1);
               background-image: url("/static/img/heroImage.jpg");
               background-size: cover;
               background-repeat: no-repeat;
@@ -101,6 +104,36 @@ class MyApp extends App<Props> {
 
             .hero .hero-inner .jumbotron p.following {
               font-size: 2rem;
+            }
+
+            a.goToTop {
+              position: fixed;
+              left: 1rem;
+              bottom: 1rem;
+              cursor: pointer;
+              width: 50px;
+              height: 50px;
+              background-color: #3e618f;
+              text-indent: -9999px;
+              -webkit-border-radius: 60px;
+              -moz-border-radius: 60px;
+              border-radius: 60px;
+              box-shadow: 0 0 7px 0 rgba(0,0,0,0.1);
+              opacity: 1;
+            }
+
+            a.goToTop span.arrow {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -8px;
+              margin-top: -12px;
+              height: 0;
+              width: 0;
+              border: 8px solid transparent;
+              border-bottom-color: transparent;
+              border-bottom-color: #ffffff;
+              box-shadow: inset 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.75);
             }
 
             @media (min-width: 768px) and (-moz-device-pixel-ratio: 1),
