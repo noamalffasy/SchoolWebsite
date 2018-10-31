@@ -4,7 +4,7 @@ import App, { Container } from "next/app";
 import { withRouter, SingletonRouter } from "next/router";
 
 import Navbar from "../components/Navbar";
-import WixEditor from "../components/WixEditor";
+// import WixEditor from "../components/WixEditor";
 
 interface Props {
   router: SingletonRouter;
@@ -21,12 +21,24 @@ class MyApp extends App<Props> {
     return { pageProps };
   }
 
+  componentDidMount() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  }
+
   render() {
     const { Component, pageProps, router } = this.props;
 
     return (
       <Container>
-        <WixEditor />
+        {/* <WixEditor /> */}
         <div id="main">
           {router.pathname === "/" ? (
             <>
@@ -118,7 +130,7 @@ class MyApp extends App<Props> {
               -webkit-border-radius: 60px;
               -moz-border-radius: 60px;
               border-radius: 60px;
-              box-shadow: 0 0 7px 0 rgba(0,0,0,0.1);
+              box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
               opacity: 1;
             }
 
