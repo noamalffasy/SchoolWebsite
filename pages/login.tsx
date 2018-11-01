@@ -2,6 +2,8 @@ import * as React from "react";
 import { Component } from "react";
 
 import Head from "next/head";
+import Link from "next/link";
+
 import Input from "../components/Input";
 
 class Login extends Component {
@@ -9,19 +11,45 @@ class Login extends Component {
     return (
       <div className="container">
         <Head>
-          <title>כניסה | קריית החינוך פארק המדע</title>
+          <title>כניסה - קריית החינוך פארק המדע</title>
         </Head>
         <form action="/login">
           <Input label="שם משתמש" type="username" />
           <Input label="סיסמא" type="password" />
-          <input type="submit" value="כניסה" />
+          <div className="bottom">
+            <div className="right">
+              <Link href="/signup">
+                <a className="button">אין לך משתמש?</a>
+              </Link>
+              <Link href="/forgotPassword">
+                <a className="button">שכחת את הסיסמא?</a>
+              </Link>
+            </div>
+            <input type="submit" value="כניסה" />
+          </div>
         </form>
         <style jsx global>{`
           .Input {
             margin: 1rem 0;
           }
 
-          input[type="submit"] {
+          .bottom {
+            display: flex;
+            direction: rtl;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .bottom .right a.button {
+            margin: 0 0.5rem;
+          }
+
+          .bottom .right a.button:first-child {
+            margin: 0 0 0 0.5rem;
+          }
+
+          .bottom a.button,
+          .bottom input[type="submit"] {
             border: 0;
             padding: 0;
             color: #3e618f;
@@ -31,7 +59,11 @@ class Login extends Component {
             transition: all 0.3s;
           }
 
-          input[type="submit"]:hover {
+          .bottom a.button:hover,
+          .bottom a.button:focus,
+          .bottom input[type="submit"]:hover,
+          .bottom input[type="submit"]:focus {
+            text-decoration: none;
             opacity: 1;
           }
 
