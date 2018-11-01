@@ -10,7 +10,7 @@ class SignUp extends Component {
     return (
       <div className="container">
         <Head>
-          <title>הרשמה | קריית החינוך פארק המדע</title>
+          <title>הרשמה - קריית החינוך פארק המדע</title>
         </Head>
         <form action="/signup">
           <Input label="קוד הרשמה" type="text" />
@@ -26,7 +26,7 @@ class SignUp extends Component {
             <option value="teacher">מה השם של המחנכת הראשונה שלך?</option>
             <option value="food">מה המאכל האהוב עליך?</option>
           </Select>
-          <Input label="תשובה לשאלת אבטחה" type="text" />
+          <Input label="תשובה לשאלת אימות" type="text" />
           <input type="submit" value="הרשמה" />
         </form>
         <style jsx global>{`
@@ -44,10 +44,11 @@ class SignUp extends Component {
             transition: all 0.3s;
           }
 
-          input[type="submit"]:hover {
+          input[type="submit"]:hover,
+          input[type="submit"]:focus {
             opacity: 1;
           }
-          
+
           @media (min-width: 768px) {
             form {
               width: 50%;
