@@ -101,6 +101,7 @@ class Input extends Component<Props> {
             color: rgba(0, 0, 0, 0.4);
             white-space: nowrap;
             right: 0;
+            user-select: none;
             cursor: inherit;
             transition: all 0.3s;
             transform-origin: right top;
@@ -123,10 +124,9 @@ class Input extends Component<Props> {
           .Input span::after {
             content: "";
             display: block;
-            transform: scaleX(0);
-            margin: -0.15rem 0 0 0;
             border-bottom: 2px solid #3e618f;
             width: 100%;
+            transform: scaleX(0);
             transition: all 0.3s;
           }
 

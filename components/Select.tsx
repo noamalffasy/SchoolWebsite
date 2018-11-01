@@ -96,6 +96,7 @@ class Select extends Component<Props> {
             color: rgba(0, 0, 0, 0.4);
             white-space: nowrap;
             right: 0;
+            user-select: none;
             pointer-events: none;
             cursor: inherit;
             transition: all 0.3s;
