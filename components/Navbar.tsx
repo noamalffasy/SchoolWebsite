@@ -42,15 +42,6 @@ class Navbar extends Component<Props> {
             אודות
           </a>
         </Link>
-        <Link href="/contact">
-          <a
-            className={
-              router.pathname === "/contact" ? "nav-item active" : "nav-item"
-            }
-          >
-            צור קשר
-          </a>
-        </Link>
         <div className="left">
           <Link href="/signup">
             <a
@@ -97,8 +88,10 @@ class Navbar extends Component<Props> {
           }
 
           .Navbar a.nav-item.active,
-          .Navbar a.nav-item:hover {
+          .Navbar a.nav-item:hover,
+          .Navbar a.nav-item:focus {
             text-decoration: none;
+            outline: 0;
             opacity: 1;
           }
 
