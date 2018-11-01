@@ -8,7 +8,7 @@ class Quality extends Component {
     return (
       <>
         <Head>
-          <title>איכות | קריית החינוך פארק המדע</title>
+          <title>איכות - קריית החינוך פארק המדע</title>
         </Head>
         <img src="/static/img/quality.png" />
         <style jsx>{`
