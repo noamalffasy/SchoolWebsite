@@ -11,7 +11,7 @@ class About extends Component {
     return (
       <div className="container hebrew">
         <Head>
-          <title>אודות | קריית החינוך פארק המדע</title>
+          <title>אודות - קריית החינוך פארק המדע</title>
         </Head>
         <div className="toc">
           <h1>תוכן עניינים</h1>
@@ -205,6 +205,32 @@ class About extends Component {
             />
           </ImageView>
         </div>
+        <div className="info-section">
+          <h1>פרטים</h1>
+          <p>
+            רחוב:{" "}
+            <a href="https://goo.gl/maps/cG4XFhEPgFS2" target="_blank">
+              אילן רמון 1, נס ציונה
+            </a>
+          </p>
+          <p>
+            טלפון: <a href="tel:+97286314100">08-6314100</a>
+          </p>
+          <p>
+            פקס: <a href="tel:+97286314129">08-6314129</a>
+          </p>
+          <p>
+            דוא"ל:{" "}
+            <a
+              data-auto-recognition="true"
+              data-content="info@park-hamada.org.il"
+              href="mailto:info@park-hamada.org.il"
+              data-type="mail"
+            >
+              info@park-hamada.org.il
+            </a>
+          </p>
+        </div>
 
         <style jsx>{`
           a {
@@ -226,6 +252,10 @@ class About extends Component {
           .hebrew {
             text-align: right;
             direction: rtl;
+          }
+
+          .info-section {
+            margin: 0 0 2rem;
           }
         `}</style>
       </div>
