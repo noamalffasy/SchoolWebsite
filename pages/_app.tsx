@@ -23,7 +23,7 @@ class MyApp extends App<Props> {
     return { pageProps };
   }
 
-  componentDidMount() {
+  componentDidUpdate() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function(e) {
         e.preventDefault();
