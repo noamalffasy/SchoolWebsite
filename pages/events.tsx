@@ -8,6 +8,8 @@ import Card, { CardImage } from "../components/Card";
 
 import eventsData from "../data/events";
 
+import { ASSET_URL } from "../utils/constants";
+
 class Events extends Component {
   render() {
     return (
@@ -24,7 +26,7 @@ class Events extends Component {
                 <p>{event.desc}</p>
                 <Link
                   href={`/event?id=${event.id}`}
-                  as={`/events/${event.id}`}
+                  as={`${ASSET_URL}/events/${event.id}`}
                 >
                   <a>קרא עוד</a>
                 </Link>

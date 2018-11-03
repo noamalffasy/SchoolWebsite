@@ -9,6 +9,8 @@ import Card, { CardImage } from "../components/Card";
 import categoriesData from "../data/categories";
 import eventsData from "../data/events";
 
+import { ASSET_URL } from "../utils/constants";
+
 class Home extends Component {
   render() {
     const categories = categoriesData;
@@ -34,7 +36,7 @@ class Home extends Component {
                       <p>{category.desc}</p>
                       <Link
                         href={`/highlight?id=${category.id}`}
-                        as={`/highlights/${category.id}`}
+                        as={`${ASSET_URL}/highlights/${category.id}`}
                       >
                         <a>קרא עוד</a>
                       </Link>
@@ -46,7 +48,7 @@ class Home extends Component {
                           <p>{category.content}</p>
                           <Link
                             href={`/highlight?id=${category.id}`}
-                            as={`/highlights/${category.id}`}
+                            as={`${ASSET_URL}/highlights/${category.id}`}
                           >
                             <a>קרא עוד</a>
                           </Link>
@@ -70,7 +72,7 @@ class Home extends Component {
                   <p>{event.desc}</p>
                   <Link
                     href={`/event?id=${event.id}`}
-                    as={`/events/${event.id}`}
+                    as={`${ASSET_URL}/events/${event.id}`}
                   >
                     <a>קרא עוד</a>
                   </Link>

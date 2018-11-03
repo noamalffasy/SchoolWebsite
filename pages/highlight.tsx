@@ -11,6 +11,8 @@ import Card, { CardImage } from "../components/Card";
 import highlightsData from "../data/highlights";
 import eventsData from "../data/events";
 
+import { ASSET_URL } from "../utils/constants";
+
 interface ImageInterface {
   src: string;
   caption: string;
@@ -111,7 +113,7 @@ class Highlight extends Component<Props> {
                     <p>{event.desc}</p>
                     <Link
                       href={`/event?id=${event.id}`}
-                      as={`/events/${event.id}`}
+                      as={`${ASSET_URL}/events/${event.id}`}
                     >
                       <a>קרא עוד</a>
                     </Link>

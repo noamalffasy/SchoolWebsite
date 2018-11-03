@@ -6,6 +6,8 @@ import Link from "next/link";
 
 import Input from "../components/Input";
 
+import { ASSET_URL } from "../utils/constants";
+
 class Login extends Component {
   render() {
     return (
@@ -18,10 +20,10 @@ class Login extends Component {
           <Input label="סיסמא" type="password" />
           <div className="bottom">
             <div className="right">
-              <Link href="/signup">
+              <Link href="/signup" as={`${ASSET_URL}/signup`}>
                 <a className="button">אין לך משתמש?</a>
               </Link>
-              <Link href="/forgotPassword">
+              <Link href="/forgotPassword" as={`${ASSET_URL}/forgotPassword`}>
                 <a className="button">שכחת את הסיסמא?</a>
               </Link>
             </div>

@@ -17,7 +17,7 @@ class Navbar extends Component<Props> {
 
     return (
       <div className={`Navbar ${white ? "white" : ""}`}>
-        <Link href="/">
+        <Link href="/" as={`${ASSET_URL}/`}>
           <a className={`nav-item ${router.pathname === "/" ? "active" : ""}`}>
             <img
               alt=""
@@ -33,7 +33,7 @@ class Navbar extends Component<Props> {
             />
           </a>
         </Link>
-        <Link href="/about">
+        <Link href="/about" as={`${ASSET_URL}/about`}>
           <a
             className={`nav-item ${
               router.pathname === "/about" ? "active" : ""
@@ -42,7 +42,7 @@ class Navbar extends Component<Props> {
             אודות
           </a>
         </Link>
-        <Link href="/events">
+        <Link href="/events" as={`${ASSET_URL}/events`}>
           <a
             className={`nav-item ${
               router.pathname === "/events" || router.pathname === "/event"
@@ -54,7 +54,7 @@ class Navbar extends Component<Props> {
           </a>
         </Link>
         <div className="left">
-          <Link href="/signup">
+          <Link href="/signup" as={`${ASSET_URL}/signup`}>
             <a
               className={`nav-item ${
                 router.pathname === "/signup" ? "active" : ""
@@ -63,7 +63,7 @@ class Navbar extends Component<Props> {
               הרשמה
             </a>
           </Link>
-          <Link href="/login">
+          <Link href="/login" as={`${ASSET_URL}/login`}>
             <a
               className={`nav-item ${
                 router.pathname === "/login" ? "active" : ""
