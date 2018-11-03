@@ -1,5 +1,7 @@
 import Document, { Head, Main, NextScript } from "next/document";
 
+import { ASSET_URL } from "../utils/constants";
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -7,11 +9,6 @@ class MyDocument extends Document {
   }
 
   render() {
-    const ASSET_URL =
-      process.env.NODE_ENV === "production"
-        ? "https://noamalffasy.github.io/SchoolWebsite"
-        : "";
-
     return (
       <html>
         <Head>
@@ -29,9 +26,7 @@ class MyDocument extends Document {
           />
           <link
             rel="stylesheet"
-            href={`${
-              ASSET_URL
-            }/static/css/bootstrap-reboot.min.css`}
+            href={`${ASSET_URL}/static/css/bootstrap-reboot.min.css`}
           />
 
           {/* Fonts */}
@@ -44,73 +39,53 @@ class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="57x57"
-            href={`${
-              ASSET_URL
-            }/static/favicons/apple-icon-57x57.png`}
+            href={`${ASSET_URL}/static/favicons/apple-icon-57x57.png`}
           />
           <link
             rel="apple-touch-icon"
             sizes="60x60"
-            href={`${
-              ASSET_URL
-            }/static/favicons/apple-icon-60x60.png`}
+            href={`${ASSET_URL}/static/favicons/apple-icon-60x60.png`}
           />
           <link
             rel="apple-touch-icon"
             sizes="72x72"
-            href={`${
-              ASSET_URL
-            }/static/favicons/apple-icon-72x72.png`}
+            href={`${ASSET_URL}/static/favicons/apple-icon-72x72.png`}
           />
           <link
             rel="apple-touch-icon"
             sizes="76x76"
-            href={`${
-              ASSET_URL
-            }/static/favicons/apple-icon-76x76.png`}
+            href={`${ASSET_URL}/static/favicons/apple-icon-76x76.png`}
           />
           <link
             rel="apple-touch-icon"
             sizes="114x114"
-            href={`${
-              ASSET_URL
-            }/static/favicons/apple-icon-114x114.png`}
+            href={`${ASSET_URL}/static/favicons/apple-icon-114x114.png`}
           />
           <link
             rel="apple-touch-icon"
             sizes="120x120"
-            href={`${
-              ASSET_URL
-            }/static/favicons/apple-icon-120x120.png`}
+            href={`${ASSET_URL}/static/favicons/apple-icon-120x120.png`}
           />
           <link
             rel="apple-touch-icon"
             sizes="144x144"
-            href={`${
-              ASSET_URL
-            }/static/favicons/apple-icon-144x144.png`}
+            href={`${ASSET_URL}/static/favicons/apple-icon-144x144.png`}
           />
           <link
             rel="apple-touch-icon"
             sizes="152x152"
-            href={`${
-              ASSET_URL
-            }/static/favicons/apple-icon-152x152.png`}
+            href={`${ASSET_URL}/static/favicons/apple-icon-152x152.png`}
           />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href={`${
-              ASSET_URL
-            }/static/favicons/apple-icon-180x180.png`}
+            href={`${ASSET_URL}/static/favicons/apple-icon-180x180.png`}
           />
           <link
             rel="icon"
             type="image/png"
             sizes="192x192"
-            href={`${
-              ASSET_URL
-            }/static/favicons/android-icon-192x192.png`}
+            href={`${ASSET_URL}/static/favicons/android-icon-192x192.png`}
           />
           <link
             rel="icon"

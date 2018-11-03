@@ -6,6 +6,8 @@ import { withRouter, SingletonRouter } from "next/router";
 import Navbar from "../components/Navbar";
 // import WixEditor from "../components/WixEditor";
 
+import { ASSET_URL } from "../utils/constants";
+
 interface Props {
   router: SingletonRouter;
 }
@@ -79,7 +81,7 @@ class MyApp extends App<Props> {
             .hero .background {
               position: absolute;
               background-color: rgba(255, 255, 255, 1);
-              background-image: url("/static/img/heroImage.jpg");
+              background-image: url(${`${ASSET_URL}/static/img/heroImage.jpg`});
               background-size: cover;
               background-repeat: no-repeat;
               width: 100%;

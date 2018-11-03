@@ -4,6 +4,8 @@ import { Component } from "react";
 import Link from "next/link";
 import { SingletonRouter } from "next/router";
 
+import { ASSET_URL } from "../utils/constants";
+
 interface Props {
   router: SingletonRouter;
   white?: boolean;
@@ -20,11 +22,11 @@ class Navbar extends Component<Props> {
             <img
               alt=""
               sizes="4rem"
-              srcSet={`/static/img/logos/64px${
+              srcSet={`${ASSET_URL}/static/img/logos/64px${
                 white ? "_white" : ""
-              }.png 64w, /static/img/logos/128px${
+              }.png 64w, ${ASSET_URL}/static/img/logos/128px${
                 white ? "_white" : ""
-              }.png 128w, /static/img/logos/256px${
+              }.png 128w, ${ASSET_URL}/static/img/logos/256px${
                 white ? "_white" : ""
               }.png 256w`}
               className="logo"
