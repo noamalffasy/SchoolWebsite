@@ -42,6 +42,18 @@ class Navbar extends Component<Props> {
             אודות
           </a>
         </Link>
+        <Link href="/highlights" as={`${ASSET_URL}/highlights`}>
+          <a
+            className={`nav-item ${
+              router.pathname === "/highlights" ||
+              router.pathname === "/highlight"
+                ? "active"
+                : ""
+            }`}
+          >
+            מגמות
+          </a>
+        </Link>
         <Link href="/events" as={`${ASSET_URL}/events`}>
           <a
             className={`nav-item ${
