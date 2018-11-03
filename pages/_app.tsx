@@ -174,6 +174,26 @@ class MyApp extends App<Props> {
               }
             }
           `}</style>
+          <style jsx global>{`
+            body {
+              font-family: "Arimo", -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+                "Noto Color Emoji" !important;
+            }
+
+            a {
+              color: #3e618f;
+              opacity: 0.65;
+              transition: all 0.3s;
+            }
+
+            a:hover {
+              color: #3e618f;
+              opacity: 1;
+              text-decoration: none;
+            }
+          `}</style>
         </div>
       </Container>
     );
