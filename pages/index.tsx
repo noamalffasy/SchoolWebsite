@@ -13,9 +13,6 @@ import { ASSET_URL } from "../utils/constants";
 
 class Home extends Component {
   render() {
-    const categories = categoriesData;
-    const events = eventsData;
-
     return (
       <div className="container">
         <Head>
@@ -24,7 +21,7 @@ class Home extends Component {
         <div className="categories-outer">
           <h1>מגמות</h1>
           <div className="categories">
-            {categories.map((category, i) => {
+            {categoriesData.map((category, i) => {
               return (
                 <Card key={i}>
                   <CardImage background={category.iconBackground} svg>
@@ -64,7 +61,7 @@ class Home extends Component {
         <div className="events-outer">
           <h1>אירועים אחרונים</h1>
           <div className="events">
-            {events.slice(0, 2).map((event, i) => {
+            {eventsData.slice(0, 2).map((event, i) => {
               return (
                 <Card key={i}>
                   <CardImage background={`url("${event.image}")`} />
