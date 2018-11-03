@@ -3,8 +3,11 @@ const withMDX = require("@zeit/next-mdx")({
   extension: /\.mdx?$/
 });
 
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports = withMDX(
   withTypescript({
+    assetPrefix: isProd ? "https://noamalffasy.github.io/SchoolWebsite" : "",
     exportPathMap: async function(defaultPathMap) {
       return {
         "/": { page: "/" },
