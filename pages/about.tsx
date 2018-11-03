@@ -118,12 +118,12 @@ class About extends Component {
           </p>
           <ImageView>
             <Image
-              imageSrc="https://static.wixstatic.com/media/73d086_53799c349bf6446580f55d8a03da890a~mv2.jpg/v1/fill/w_276,h_177,al_c,q_80,usm_0.66_1.00_0.01/73d086_53799c349bf6446580f55d8a03da890a~mv2.jpg"
-              caption="בבושקה לכלבים בצורת עצם 2"
-            />
-            <Image
               imageSrc="https://static.wixstatic.com/media/73d086_8473970185334d85b1a781068a8f6e2d~mv2.jpg/v1/fill/w_276,h_177,al_c,q_80,usm_0.66_1.00_0.01/73d086_8473970185334d85b1a781068a8f6e2d~mv2.jpg"
               caption="בבושקה לכלבים בצורת עצם"
+            />
+            <Image
+              imageSrc="https://static.wixstatic.com/media/73d086_53799c349bf6446580f55d8a03da890a~mv2.jpg/v1/fill/w_276,h_177,al_c,q_80,usm_0.66_1.00_0.01/73d086_53799c349bf6446580f55d8a03da890a~mv2.jpg"
+              caption="בבושקה לכלבים בצורת עצם 2"
             />
             <Image
               imageSrc="https://static.wixstatic.com/media/73d086_a010a8293ac446bc8925d24f8ac5988b~mv2.jpg/v1/fill/w_276,h_177,al_c,q_80,usm_0.66_1.00_0.01/73d086_a010a8293ac446bc8925d24f8ac5988b~mv2.jpg"
