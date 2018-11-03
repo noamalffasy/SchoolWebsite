@@ -14,6 +14,7 @@ class Card extends Component {
             background: #fbfbfb;
             margin: 0 1rem 3rem;
             padding: 1.5rem 0.5rem;
+            direction: rtl;
           }
 
           @media (min-width: 768px) {
@@ -24,7 +25,7 @@ class Card extends Component {
         `}</style>
         <style jsx global>{`
           .card h2 {
-            font-size: 3rem;
+            font-size: 2rem;
           }
 
           .card svg {
@@ -37,16 +38,28 @@ class Card extends Component {
             font-weight: 300;
           }
 
+          .card a {
+            color: #3e618f;
+            opacity: 0.65;
+            transition: all 0.3s;
+          }
+
+          .card a:hover {
+            color: #3e618f;
+            opacity: 1;
+            text-decoration: none;
+          }
+
           .card > p {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
           }
 
           .card > a {
             font-size: 1.15rem;
           }
 
-          .card a::before {
-            content: "< ";
+          .card a::after {
+            content: " >";
           }
 
           .card .sub-category {
@@ -78,7 +91,7 @@ export class CardImage extends Component<CardImageProps> {
             max-width: 70%;
             height: ${svg ? "12rem" : "0"};
             margin: 0 auto 1rem;
-            padding: 2.5rem 1rem ${svg ? "2.5rem" : "70%"};
+            padding: 2.5rem 1rem ${svg ? "2.5rem" : "60%"};
             border-radius: 0.3rem;
             background: ${background};
             background-size: cover;
