@@ -16,9 +16,7 @@ class Navbar extends Component<Props> {
     return (
       <div className={`Navbar ${white ? "white" : ""}`}>
         <Link href="/">
-          <a
-            className={router.pathname === "/" ? "nav-item active" : "nav-item"}
-          >
+          <a className={`nav-item ${router.pathname === "/" ? "active" : ""}`}>
             <img
               alt=""
               sizes="4rem"
@@ -35,28 +33,39 @@ class Navbar extends Component<Props> {
         </Link>
         <Link href="/about">
           <a
-            className={
-              router.pathname === "/about" ? "nav-item active" : "nav-item"
-            }
+            className={`nav-item ${
+              router.pathname === "/about" ? "active" : ""
+            }`}
           >
             אודות
+          </a>
+        </Link>
+        <Link href="/events">
+          <a
+            className={`nav-item ${
+              router.pathname === "/events" || router.pathname === "/event"
+                ? "active"
+                : ""
+            }`}
+          >
+            אירועים
           </a>
         </Link>
         <div className="left">
           <Link href="/signup">
             <a
-              className={
-                router.pathname === "/signup" ? "nav-item active" : "nav-item"
-              }
+              className={`nav-item ${
+                router.pathname === "/signup" ? "active" : ""
+              }`}
             >
               הרשמה
             </a>
           </Link>
           <Link href="/login">
             <a
-              className={
-                router.pathname === "/login" ? "nav-item active" : "nav-item"
-              }
+              className={`nav-item ${
+                router.pathname === "/login" ? "active" : ""
+              }`}
             >
               כניסה
             </a>
