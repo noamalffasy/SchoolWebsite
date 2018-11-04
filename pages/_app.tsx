@@ -150,16 +150,12 @@ class MyApp extends App<Props> {
               box-shadow: inset 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.75);
             }
 
-            @media (min-width: 768px) and (-moz-device-pixel-ratio: 1),
-              @media (min-width: 768px) and (-o-device-pixel-ratio: 1),
-              @media (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
+            @media (min-width: 768px),
+              @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
               .hero .background {
                 background-attachment: fixed;
               }
-            }
-
-            @media (min-width: 768px),
-              @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+              
               .hero .hero-inner .jumbotron p.lead {
                 font-size: 2rem;
               }
