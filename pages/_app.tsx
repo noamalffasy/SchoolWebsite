@@ -147,6 +147,7 @@ class MyApp extends App<Props> {
               border: 8px solid transparent;
               border-bottom-color: transparent;
               border-bottom-color: #ffffff;
+              outline: 0;
               box-shadow: inset 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.75);
             }
 
