@@ -124,6 +124,7 @@ class Input extends Component<Props> {
           .Input span::after {
             content: "";
             display: block;
+            margin: -0.1rem 0 0;
             border-bottom: 2px solid #3e618f;
             width: 100%;
             transform: scaleX(0);
