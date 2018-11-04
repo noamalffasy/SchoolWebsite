@@ -67,7 +67,7 @@ class MyApp extends App<Props> {
               <Component {...pageProps} />
             </>
           )}
-          <a href="#main" className="goToTop">
+          <a href="#Navbar" className="goToTop">
             <span className="arrow" />
           </a>
           <style jsx>{`

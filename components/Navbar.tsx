@@ -16,7 +16,7 @@ class Navbar extends Component<Props> {
     const { white, router } = this.props;
 
     return (
-      <div className={`Navbar ${white ? "white" : ""}`}>
+      <div className={`Navbar ${white ? "white" : ""}`} id="Navbar">
         <Link href="/" as={`${ASSET_URL}/`}>
           <a className={`nav-item ${router.pathname === "/" ? "active" : ""}`}>
             <img
