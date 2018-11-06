@@ -34,6 +34,10 @@ class About extends Component {
           </a>
           <br />
           <a href="#playing-and-learning-section">משחקים ולומדים</a>
+          <br />
+          <a href="#links-section">קישורים</a>
+          <br />
+          <a href="#info-section">פרטים</a>
         </div>
         <div id="perspective-section">
           <h1>התפיסה הפדגוגית</h1>
@@ -205,7 +209,37 @@ class About extends Component {
             />
           </ImageView>
         </div>
-        <div className="info-section">
+        <div id="links-section">
+          <h1>קישורים</h1>
+          <p>
+            על מנת לצפות בציונים, אירועים והודעות, הכנסו ל
+            <a href="https://www.webtop.co.il/v2/" target="_blank">
+              Webtop
+            </a>
+          </p>
+          <p>
+            למידע כללי בנושא העיר, הכנסו ל
+            <a href="http://www.nzc.org.il/" target="_blank">
+              אתר עיריית נס ציונה
+            </a>
+          </p>
+          <p>
+            לציוני בגרות, אירועים שונים ושיעורים פרטיים בחים, הכנסו ל
+            <a
+              href="http://edu.gov.il/special/students/Pages/default.aspx"
+              target="_blank"
+            >
+              פורטל התלמידים של משרד החינוך
+            </a>
+          </p>
+          <p>
+            לספרים דיגיטליים, משימות ופעילויות שונות, הכנסו ל
+            <a href="https://ebaghigh.cet.ac.il/" target="_blank">
+              ילקוט הדיגיטלי
+            </a>
+          </p>
+        </div>
+        <div id="info-section">
           <h1>פרטים</h1>
           <p>
             רחוב:{" "}
@@ -254,7 +288,7 @@ class About extends Component {
             direction: rtl;
           }
 
-          .info-section {
+          #info-section {
             margin: 0 0 2rem;
           }
         `}</style>
