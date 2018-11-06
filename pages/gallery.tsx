@@ -28,6 +28,11 @@ class Gallery extends Component {
                         />
                       </td>
                     </tr>
+                    <tr>
+                      <td>
+                        <p>מגרש הספורט ובניין בית הספר </p>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -44,6 +49,11 @@ class Gallery extends Component {
                         />
                       </td>
                     </tr>
+                    <tr>
+                      <td>
+                        <p>מגרש הספורט של בית הספר</p>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -58,6 +68,11 @@ class Gallery extends Component {
                             backgroundImage: `url(${ASSET_URL}/static/img/gallery/3.jpg)`
                           }}
                         />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>בניין בית הספר מלמטה</p>
                       </td>
                     </tr>
                   </tbody>
@@ -78,6 +93,11 @@ class Gallery extends Component {
                         />
                       </td>
                     </tr>
+                    <tr>
+                      <td>
+                        <p>בניין בית הספר מזווית שונה</p>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -94,6 +114,11 @@ class Gallery extends Component {
                         />
                       </td>
                     </tr>
+                    <tr>
+                      <td>
+                        <p>מעבדת רפואה</p>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -108,6 +133,11 @@ class Gallery extends Component {
                             backgroundImage: `url(${ASSET_URL}/static/img/gallery/6.jpg)`
                           }}
                         />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>מזכירות בית הספר</p>
                       </td>
                     </tr>
                   </tbody>
@@ -128,6 +158,11 @@ class Gallery extends Component {
                         />
                       </td>
                     </tr>
+                    <tr>
+                      <td>
+                        <p>הדפסת תלת מימד</p>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -144,6 +179,11 @@ class Gallery extends Component {
                         />
                       </td>
                     </tr>
+                    <tr>
+                      <td>
+                        <p>כיתת סייבר עובדת</p>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -158,6 +198,11 @@ class Gallery extends Component {
                             backgroundImage: `url(${ASSET_URL}/static/img/gallery/9.jpg)`
                           }}
                         />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>כיתת רפואה בעבודה</p>
                       </td>
                     </tr>
                   </tbody>
@@ -178,6 +223,11 @@ class Gallery extends Component {
                         />
                       </td>
                     </tr>
+                    <tr>
+                      <td>
+                        <p>כיתת רפואה ביחד עם מד"א</p>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -192,6 +242,11 @@ class Gallery extends Component {
                             backgroundImage: `url(${ASSET_URL}/static/img/gallery/11.jpg)`
                           }}
                         />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>מבט אווירי על בית הספר</p>
                       </td>
                     </tr>
                   </tbody>
