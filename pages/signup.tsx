@@ -36,7 +36,7 @@ class SignUp extends Component {
 
           input[type="submit"] {
             border: 0;
-            padding: 0;
+            padding: 0 0 1rem;
             color: #3e618f;
             background: none;
             opacity: 0.5;

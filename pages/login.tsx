@@ -38,8 +38,13 @@ class Login extends Component {
           .bottom {
             display: flex;
             direction: rtl;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
+          }
+
+          .bottom .right {
+            margin: 0 0 0.5rem;
           }
 
           .bottom .right a.button {
@@ -53,7 +58,7 @@ class Login extends Component {
           .bottom a.button,
           .bottom input[type="submit"] {
             border: 0;
-            padding: 0;
+            padding: 0 0 1rem;
             color: #3e618f;
             background: none;
             opacity: 0.5;
@@ -67,6 +72,12 @@ class Login extends Component {
           .bottom input[type="submit"]:focus {
             text-decoration: none;
             opacity: 1;
+          }
+
+          @media (min-width: 576px) {
+            .bottom {
+              flex-direction: row;
+            }
           }
 
           @media (min-width: 768px) {
