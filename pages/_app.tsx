@@ -99,7 +99,7 @@ class MyApp extends App<Props> {
             }
 
             .hero .hero-inner .jumbotron {
-              padding: 4rem 0;
+              padding: 2rem 0 4rem;
               text-align: center;
               color: #fff;
             }
@@ -163,6 +163,10 @@ class MyApp extends App<Props> {
 
               .hero .background {
                 background-attachment: fixed;
+              }
+
+              .hero .hero-inner .jumbotron {
+                padding: 4rem 0;
               }
 
               .hero .hero-inner .jumbotron p.lead {
