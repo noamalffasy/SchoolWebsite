@@ -14,6 +14,7 @@ module.exports = withMDX(
         "/about": { page: "/about" },
         "/events": { page: "/events" },
         "/highlights": { page: "/highlights" },
+        "/gallery": { page: "/gallery" },
         "/signup": { page: "/signup" },
         "/login": { page: "/login" },
         "/forgotPassword": { page: "/forgotPassword" },
