@@ -71,6 +71,10 @@ class MyApp extends App<Props> {
             <span className="arrow" />
           </a>
           <style jsx>{`
+            .container {
+              padding: calc(4rem + 2 * 0.5rem + 1rem * 2) 0 0 0;
+            }
+
             .hero {
               position: relative;
               min-height: 80vh;
@@ -153,10 +157,14 @@ class MyApp extends App<Props> {
 
             @media (min-width: 768px),
               @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+              .container {
+                padding: 0;
+              }
+
               .hero .background {
                 background-attachment: fixed;
               }
-              
+
               .hero .hero-inner .jumbotron p.lead {
                 font-size: 2rem;
               }
