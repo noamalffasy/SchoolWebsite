@@ -34,122 +34,124 @@ class Navbar extends Component<Props, State> {
         className={`Navbar ${white ? "white" : ""} ${open ? "open" : ""}`}
         id="Navbar"
       >
-        <div className="navbar-top">
-          <Link href="/" as={`${ASSET_URL}/`}>
-            <a
-              className={`nav-item brand ${
-                router.pathname === "/" ? "active" : ""
-              }`}
-            >
-              <img
-                alt=""
-                sizes="4rem"
-                srcSet={`${ASSET_URL}/static/img/logos/64px${
-                  white || open ? "_white" : ""
-                }.png 64w, ${ASSET_URL}/static/img/logos/128px${
-                  white || open ? "_white" : ""
-                }.png 128w, ${ASSET_URL}/static/img/logos/256px${
-                  white || open ? "_white" : ""
-                }.png 256w`}
-                className="logo"
-              />
-            </a>
-          </Link>
-          <button className="menu-btn" onClick={this.toggleNavbar}>
-            <span className="bar" />
-            <span className="bar" />
-          </button>
-        </div>
-        <div className="menu">
-          <Link href="/" as={`${ASSET_URL}/`}>
-            <a
-              className={`nav-item brand ${
-                router.pathname === "/" ? "active" : ""
-              }`}
-            >
-              <img
-                alt=""
-                sizes="4rem"
-                srcSet={`${ASSET_URL}/static/img/logos/64px${
-                  white ? "_white" : ""
-                }.png 64w, ${ASSET_URL}/static/img/logos/128px${
-                  white ? "_white" : ""
-                }.png 128w, ${ASSET_URL}/static/img/logos/256px${
-                  white ? "_white" : ""
-                }.png 256w`}
-                className="logo"
-              />
-            </a>
-          </Link>
-          <Link href="/" as={`${ASSET_URL}/`}>
-            <a
-              className={`nav-item home ${
-                router.pathname === "/" ? "active" : ""
-              }`}
-            >
-              דף הבית
-            </a>
-          </Link>
-          <Link href="/about" as={`${ASSET_URL}/about`}>
-            <a
-              className={`nav-item ${
-                router.pathname === "/about" ? "active" : ""
-              }`}
-            >
-              אודות
-            </a>
-          </Link>
-          <Link href="/highlights" as={`${ASSET_URL}/highlights`}>
-            <a
-              className={`nav-item ${
-                router.pathname === "/highlights" ||
-                router.pathname === "/highlight"
-                  ? "active"
-                  : ""
-              }`}
-            >
-              מגמות
-            </a>
-          </Link>
-          <Link href="/events" as={`${ASSET_URL}/events`}>
-            <a
-              className={`nav-item ${
-                router.pathname === "/events" || router.pathname === "/event"
-                  ? "active"
-                  : ""
-              }`}
-            >
-              אירועים
-            </a>
-          </Link>
-          <Link href="/gallery" as={`${ASSET_URL}/gallery`}>
-            <a
-              className={`nav-item ${
-                router.pathname === "/gallery" ? "active" : ""
-              }`}
-            >
-              גלרייה
-            </a>
-          </Link>
-          <div className="left">
-            <Link href="/signup" as={`${ASSET_URL}/signup`}>
+        <div className="navbar-inner">
+          <div className="navbar-top">
+            <Link href="/" as={`${ASSET_URL}/`}>
               <a
-                className={`nav-item ${
-                  router.pathname === "/signup" ? "active" : ""
+                className={`nav-item brand ${
+                  router.pathname === "/" ? "active" : ""
                 }`}
               >
-                הרשמה
+                <img
+                  alt=""
+                  sizes="4rem"
+                  srcSet={`${ASSET_URL}/static/img/logos/64px${
+                    white || open ? "_white" : ""
+                  }.png 64w, ${ASSET_URL}/static/img/logos/128px${
+                    white || open ? "_white" : ""
+                  }.png 128w, ${ASSET_URL}/static/img/logos/256px${
+                    white || open ? "_white" : ""
+                  }.png 256w`}
+                  className="logo"
+                />
               </a>
             </Link>
-            <Link href="/login" as={`${ASSET_URL}/login`}>
+            <button className="menu-btn" onClick={this.toggleNavbar}>
+              <span className="bar" />
+              <span className="bar" />
+            </button>
+          </div>
+          <div className="menu">
+            <Link href="/" as={`${ASSET_URL}/`}>
               <a
-                className={`nav-item ${
-                  router.pathname === "/login" ? "active" : ""
+                className={`nav-item brand ${
+                  router.pathname === "/" ? "active" : ""
                 }`}
               >
-                כניסה
+                <img
+                  alt=""
+                  sizes="4rem"
+                  srcSet={`${ASSET_URL}/static/img/logos/64px${
+                    white ? "_white" : ""
+                  }.png 64w, ${ASSET_URL}/static/img/logos/128px${
+                    white ? "_white" : ""
+                  }.png 128w, ${ASSET_URL}/static/img/logos/256px${
+                    white ? "_white" : ""
+                  }.png 256w`}
+                  className="logo"
+                />
               </a>
             </Link>
+            <Link href="/" as={`${ASSET_URL}/`}>
+              <a
+                className={`nav-item home ${
+                  router.pathname === "/" ? "active" : ""
+                }`}
+              >
+                דף הבית
+              </a>
+            </Link>
+            <Link href="/about" as={`${ASSET_URL}/about`}>
+              <a
+                className={`nav-item ${
+                  router.pathname === "/about" ? "active" : ""
+                }`}
+              >
+                אודות
+              </a>
+            </Link>
+            <Link href="/highlights" as={`${ASSET_URL}/highlights`}>
+              <a
+                className={`nav-item ${
+                  router.pathname === "/highlights" ||
+                  router.pathname === "/highlight"
+                    ? "active"
+                    : ""
+                }`}
+              >
+                מגמות
+              </a>
+            </Link>
+            <Link href="/events" as={`${ASSET_URL}/events`}>
+              <a
+                className={`nav-item ${
+                  router.pathname === "/events" || router.pathname === "/event"
+                    ? "active"
+                    : ""
+                }`}
+              >
+                אירועים
+              </a>
+            </Link>
+            <Link href="/gallery" as={`${ASSET_URL}/gallery`}>
+              <a
+                className={`nav-item ${
+                  router.pathname === "/gallery" ? "active" : ""
+                }`}
+              >
+                גלרייה
+              </a>
+            </Link>
+            <div className="left">
+              <Link href="/signup" as={`${ASSET_URL}/signup`}>
+                <a
+                  className={`nav-item ${
+                    router.pathname === "/signup" ? "active" : ""
+                  }`}
+                >
+                  הרשמה
+                </a>
+              </Link>
+              <Link href="/login" as={`${ASSET_URL}/login`}>
+                <a
+                  className={`nav-item ${
+                    router.pathname === "/login" ? "active" : ""
+                  }`}
+                >
+                  כניסה
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
         <style jsx>{`
@@ -175,11 +177,15 @@ class Navbar extends Component<Props, State> {
 
           .Navbar.open {
             position: fixed;
-            background: rgba(62, 97, 143);
+            background: rgb(62, 97, 143);
             max-height: 100%;
           }
 
-          .Navbar .navbar-top {
+          .Navbar .navbar-inner {
+            width: 100%;
+          }
+
+          .Navbar .navbar-inner .navbar-top {
             display: flex;
             width: 100%;
             padding: 0 0.5rem;
@@ -187,11 +193,11 @@ class Navbar extends Component<Props, State> {
             justify-content: center;
           }
 
-          .Navbar .navbar-top a.brand {
+          .Navbar .navbar-inner .navbar-top a.brand {
             padding: 0.5rem 0.5rem;
           }
 
-          .Navbar .navbar-top button.menu-btn {
+          .Navbar .navbar-inner .navbar-top button.menu-btn {
             display: flex;
             border: 0;
             width: 2.5rem;
@@ -207,7 +213,7 @@ class Navbar extends Component<Props, State> {
             align-items: center;
           }
 
-          .Navbar .navbar-top button.menu-btn span.bar {
+          .Navbar .navbar-inner .navbar-top button.menu-btn span.bar {
             display: block;
             width: 1.5rem;
             height: 2px;
@@ -217,36 +223,36 @@ class Navbar extends Component<Props, State> {
             transition: all 0.3s;
           }
 
-          .Navbar.open .navbar-top button.menu-btn span.bar,
-          .Navbar.white .navbar-top button.menu-btn span.bar {
+          .Navbar.open .navbar-inner .navbar-top button.menu-btn span.bar,
+          .Navbar.white .navbar-inner .navbar-top button.menu-btn span.bar {
             background: #fff;
           }
 
-          .Navbar .navbar-top button.menu-btn:hover span.bar {
+          .Navbar .navbar-inner .navbar-top button.menu-btn:hover span.bar {
             opacity: 1;
           }
 
-          .Navbar.open .navbar-top button.menu-btn span.bar {
+          .Navbar.open .navbar-inner .navbar-top button.menu-btn span.bar {
             transform: rotate(45deg) translateY(4px) translateX(3px);
           }
 
-          .Navbar .navbar-top button.menu-btn span.bar:last-child {
+          .Navbar .navbar-inner .navbar-top button.menu-btn span.bar:last-child {
             margin: 0.5rem 0 0;
           }
 
-          .Navbar.open .navbar-top button.menu-btn span.bar:last-child {
+          .Navbar.open .navbar-inner .navbar-top button.menu-btn span.bar:last-child {
             transform: rotate(-45deg) translateY(-4px) translateX(3px);
           }
 
-          .Navbar .menu {
+          .Navbar .navbar-inner .menu {
             width: 100%;
           }
 
-          .Navbar .menu a.brand.nav-item {
+          .Navbar .navbar-inner .menu a.brand.nav-item {
             display: none;
           }
 
-          .Navbar .menu a.nav-item {
+          .Navbar .navbar-inner .menu a.nav-item {
             display: block;
             margin: 0;
             padding: 0.5rem 1.5rem;
@@ -256,29 +262,29 @@ class Navbar extends Component<Props, State> {
             transition: all 0.3s;
           }
 
-          .Navbar.open .menu a.nav-item,
-          .Navbar.white .menu a.nav-item {
+          .Navbar.open .navbar-inner .menu a.nav-item,
+          .Navbar.white .navbar-inner .menu a.nav-item {
             color: #fff;
           }
 
-          .Navbar .menu a.nav-item:first-child {
+          .Navbar .navbar-inner .menu a.nav-item:first-child {
             margin: 0 0 0 0.5rem;
           }
 
-          .Navbar .menu a.nav-item.active,
-          .Navbar .menu a.nav-item:hover,
-          .Navbar .menu a.nav-item:focus {
+          .Navbar .navbar-inner .menu a.nav-item.active,
+          .Navbar .navbar-inner .menu a.nav-item:hover,
+          .Navbar .navbar-inner .menu a.nav-item:focus {
             text-decoration: none;
             outline: 0;
             opacity: 1;
           }
 
-          .Navbar .menu a.nav-item .logo {
+          .Navbar .navbar-inner .menu a.nav-item .logo {
             height: 4rem;
             width: 4rem;
           }
 
-          .Navbar .menu .left {
+          .Navbar .navbar-inner .menu .left {
             margin-right: auto;
           }
 
@@ -292,23 +298,23 @@ class Navbar extends Component<Props, State> {
               background: none;
             }
 
-            .Navbar .navbar-top,
-            .Navbar .menu a.home.nav-item {
+            .Navbar .navbar-inner .navbar-top,
+            .Navbar .navbar-inner .menu a.home.nav-item {
               display: none;
             }
 
-            .Navbar .menu {
+            .Navbar .navbar-inner .menu {
               display: flex;
               align-items: center;
               justify-content: center;
             }
 
-            .Navbar .menu a.brand.nav-item,
-            .Navbar .menu a.nav-item {
+            .Navbar .navbar-inner .menu a.brand.nav-item,
+            .Navbar .navbar-inner .menu a.nav-item {
               display: inline-block;
             }
 
-            .Navbar .menu a.nav-item {
+            .Navbar .navbar-inner .menu a.nav-item {
               margin: 0 0.5rem;
               padding: 0;
               font-size: 1.1rem;
