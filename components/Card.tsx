@@ -39,8 +39,8 @@ class Card extends Component {
           }
 
           .card a {
-            color: #3e618f;
-            opacity: 0.65;
+            color: #142e50;
+            opacity: 0.7;
             transition: all 0.3s;
           }
 

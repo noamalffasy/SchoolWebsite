@@ -43,7 +43,7 @@ class Navbar extends Component<Props, State> {
                 }`}
               >
                 <img
-                  alt=""
+                  alt="Home"
                   sizes="4rem"
                   srcSet={`${ASSET_URL}/static/img/logos/64px${
                     white || open ? "_white" : ""
@@ -56,7 +56,7 @@ class Navbar extends Component<Props, State> {
                 />
               </a>
             </Link>
-            <button className="menu-btn" onClick={this.toggleNavbar}>
+            <button className="menu-btn" aria-hidden="true" onClick={this.toggleNavbar}>
               <span className="bar" />
               <span className="bar" />
             </button>
