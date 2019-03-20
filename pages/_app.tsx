@@ -8,6 +8,9 @@ import Navbar from "../components/Navbar";
 
 import { ASSET_URL } from "../utils/constants";
 
+import "../static/css/bootstrap-grid.min.css";
+import "../static/css/bootstrap-reboot.min.css";
+
 interface Props {
   router: SingletonRouter;
 }
@@ -67,7 +70,7 @@ class MyApp extends App<Props> {
               <Component {...pageProps} />
             </>
           )}
-          <a href="#Navbar" className="goToTop">
+          <a href="#Navbar" className="goToTop" aria-hidden="true">
             <span className="arrow" />
           </a>
           <style jsx>{`

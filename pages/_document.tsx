@@ -10,29 +10,13 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="he">
         <Head>
           {/* Metadata */}
           <meta charSet="utf-8" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no"
-          />
-
-          {/* CSS */}
-          <link
-            rel="stylesheet"
-            href={`${ASSET_URL}/static/css/bootstrap-grid.min.css`}
-          />
-          <link
-            rel="stylesheet"
-            href={`${ASSET_URL}/static/css/bootstrap-reboot.min.css`}
-          />
-
-          {/* Fonts */}
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Arimo"
           />
 
           {/* Favicons */}
@@ -117,6 +101,32 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
+
+          {/* Fonts */}
+          <style jsx>{`
+            @font-face {
+              font-family: "Arimo";
+              font-display: swap;
+              font-style: normal;
+              font-weight: 400;
+              src: local("Arimo Regular"), local("Arimo-Regular"),
+                url(https://fonts.gstatic.com/s/arimo/v12/P5sMzZCDf9_T_10UxCFuj5-v6dg.woff2)
+                  format("woff2");
+              unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+                U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+              font-family: "Arimo";
+              font-display: swap;
+              font-style: normal;
+              font-weight: 400;
+              src: local("Arimo Regular"), local("Arimo-Regular"),
+                url(https://fonts.gstatic.com/s/arimo/v12/P5sMzZCDf9_T_10bxCFuj5-v6dg.woff2)
+                  format("woff2");
+              unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+            }
+          `}</style>
         </Head>
         <body>
           <Main />
