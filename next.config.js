@@ -12,7 +12,7 @@ const isProd = process.env.NODE_ENV === "production";
 module.exports = withPlugins(
   [[withCss], [withPurgeCss], [withMDX], [withTypescript]],
   {
-    assetPrefix: isProd ? "https://noamalffasy.github.io/SchoolWebsite" : "",
+    assetPrefix: isProd ? "https://noamalffasy.me/SchoolWebsite" : "",
     exportPathMap: async function(defaultPathMap) {
       return {
         "/": { page: "/" },
