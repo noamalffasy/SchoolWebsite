@@ -1,6 +1,5 @@
 yarn-error.log
 .next/
-out/
 node_modules/
 **/.DS_Store
 convert.js
